@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seagull Casino</title>
+    <style>
+      .title {
+        font-size: 40pt;
+        text-align: center;
+        background-color: #F55E25 ;
+       }
+      body {
+        padding: 20px;
+      }
+      button {
+        margin-top: 20px;
+        line-height: 60px;
+        font-weight: bold;
+        padding: 0 40px;
+        background: #F17652;
+        border: none;
+      }
+      button:hover {
+        background: #FFBAA5;
+      }
+    </style>
+  </head>
+  <body style="background-color:#54C7FF">
+    <div class="title">
+    <p>Seagull Casino</p>
+    </div>
+    <img src="file:///C:/Users/Acer/Downloads/Seagull%20Casino.png" alt="Seagull Casino" style="position:fixed;top:50%;left:50%;margin-top:-150px;margin-left:-120px;width:250px;height:250px;">
+    <script>
+      //MAIN PAGE BUTTON TESTING
+      let btn = document.createElement("button");
+      btn.innerHTML = "Shop";
+      btn.onclick = function () {
+        alert("You entered the shop");
+      };
+      //MAIN PAGE BUTTON TO ENTER CASINO
+      document.body.appendChild(btn);
+      var button = document.createElement("button");
+      button.innerHTML = "Enter Casino";
+      var body = document.getElementsByTagName("body")[0];
+      body.appendChild(button);
+      button.addEventListener ("click", function() {
+        alert("You entered the Casino");
+      });
+   </script>
+ </body>
+</html>
+
